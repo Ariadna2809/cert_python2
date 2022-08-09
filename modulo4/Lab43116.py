@@ -1,6 +1,9 @@
 #Laboratorio 4.3.1.16 Histograma de frecuencia de caracteres ordenado
 #Elaborado por: Ariadna Loredo Estrada
 
+from os import strerror
+
+archivo = input('Introduce el nombre del archivo: ')
 def histograma(archivo):
     dic = {}
     try:
@@ -15,6 +18,5 @@ def histograma(archivo):
     except FileNotFoundError:
         print('Archivo no encontrado:', archivo)
         exit()
-
-archivo = input('Introduce el nombre del archivo: ')
+        
 histograma(archivo)
